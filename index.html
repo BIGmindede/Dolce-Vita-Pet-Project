@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel = "stylesheet" href = "style.css">
+        <link rel = "stylesheet" href = "main.css">
+        <link rel = "stylesheet" href = "header.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <title>Dolce Vita</title>
+        <link rel="icon" type = "image/png" sizes = "32x32" href="fav.png">
+    </head>
+    <body>
+        <header>
+            <nav id = "navpan">
+                <ul>
+                    <li id = "search">
+                        <div id = "searchbox"><input type ="search" placeholder="Найти..."><img src = "images/search_button.png" id = "search_button"></div>
+                    </li>
+                    <li id = "navbar">
+                        <ul>
+                            <li id = "catalog"><a href = "catalog.html"><p>Каталог</p></a>
+                                <ul>
+                                    <li><a href = "catalog.html #cakes"><p>Торты</p></a></li>
+                                    <li><a href = "catalog.html #pies"><p>Пироги</p></a></li>
+                                    <li><a href = "catalog.html #cheesecakes"><p>Чизкейки</p></a></li>
+                                    <li><a href = "catalog.html #bisquits"><p>Пирожные</p></a></li>
+                                    <li><a href = "catalog.html #tarts"><p>Тарталетки</p></a></li>
+                                </ul>
+                            </li>
+                            <li><a href = "personal_order_form.html"><p>Под заказ</p></a></li>
+                            <li id = "title"><a href = "index.html"><img src = "images/logo.png"></a></li>
+                            <li><a href = "about_us.html"><p>О нас</p></a></li>
+                            <li><a href = "Q&A.html"><p>Q&A</p></a></li>
+                        </ul>
+                    </li>
+                    <li id = "user_field">
+                        <ul>
+                            <li id = "user_icon"><a href = "logreg.html"><img src = "images/user_icon.png"></a></li>
+                            <li id = "messages"><span id = "message_marker">3</span>
+                                <ul>
+                                    <li>
+                                        <table>
+                                            <tr>
+                                                <td class="message_id">
+                                                    <span>1</span>
+                                                </td>
+                                                <td class = "message_content">
+                                                    <h3>Уведомление 1</h3>
+                                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <table>
+                                            <tr>
+                                                <td class="message_id">
+                                                    <span>2</span>
+                                                </td>
+                                                <td class = "message_content">
+                                                    <h3>Уведомление 2</h3>
+                                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <table>
+                                            <tr>
+                                                <td class="message_id">
+                                                    <span>3</span>
+                                                </td>
+                                                <td class = "message_content">
+                                                    <h3>Уведомление 3</h3>
+                                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <table>
+                                            <tr>
+                                                <td class="message_id">
+                                                    <span>4</span>
+                                                </td>
+                                                <td class = "message_content">
+                                                    <h3>Уведомление 4</h3>
+                                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li><p id = "user_name"><a href = "logreg.html">User1234567891011</a></p>
+                                        <script src="trancate.js"></script>
+                                    </li>
+                                    <li id = "goods">
+                                        <a href = "cart.html"><img id = "cart_icon" src = "images/cart_icon.png"></a>
+                                        <a href = "liked.html"><img id = "liked_icon" src = "images/liked_icon.png"></a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <nav id = "burger-menu">
+                <input type="checkbox" name="burger_menu_toggle" id="burger_menu_toggle" hidden>
+                <ul id = "title">
+                    <li id="burger_menu_checkbox">
+                        <label id = "burger_menu_label" for="burger_menu_toggle" onclick><span id = "burger_menu_icon"></span></label>
+                    </li>
+                    <li id="burger_menu_logo">
+                        <a id = "logo" href = "index.html"><img src = "images/logo.png"></a>
+                    </li>
+                </ul>
+                <ul>
+                    <li><a href="logreg.html"><p>Учетная запись</p></a></li>
+                    <li><a href="cart.html"><p>Kорзина</p></a></li>
+                    <li><a href="liked.html"><p>Понравившиеся</p></a></li>
+                    <li id = "catalog_burger_menu"><a href="catalog.html"><p>Каталог</p></a></li>
+                    <li><a href = "personal_order_form.html"><p>Под заказ</p></a></li>
+                    <li><a href = "about_us.html"><p>О нас</p></a></li>
+                    <li><a href = "Q&A.html"><p>Q&A</p></a></li>
+                </ul>
+                    
+            </nav>
+        </header>
+        <main>
+            <article><h1>Главная страница</h1><hr>
+                <section id = "popular_goods">
+                    <h2>Нравится нашим клиентам</h2>
+                    <cite>Вы у нас впервые или недавно и не знаете, чем бы полакомиться. Предлагаем вам подборку луших десертов по мнению постоянных покупателей "Dolce Vita"<br>
+                    Эти вкусности точно не оставят вас равнодушными и заставят трепетать от удовольствия</cite>
+                    <div class = "slider">
+                        <div class = "left_arr"></div>
+                        <ul class="slides">
+                            <li>
+                                <div class="one_good" data-art="10001" price = "300">
+                                    <a href="good_page.html"><img src="images/cake_zakher.png"></a>
+                                    <span class = "like_btn"><i class="fa fa-heart-o" aria-hidden="true"></i><i class="fa fa-heart" aria-hidden="true"></i></span>
+                                    <span class="good_name">
+                                        <a href="good_page.html"><h2>Торт "Захер"</h2></a>
+                                        <span class="price"></span>
+                                        <span class="good_desc">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit iusto autem delectus dolores
+                                        </span>
+                                        <button class="add_to_cart">В корзину</button>    
+                                    </span>
+                                    
+                                </div>
+                            </li>
+                            <li>
+                                <div class="one_good" data-art = "10002" price = "400">
+                                    <a href="good_page.html"><img src="images/cake_esterkhazy.png"></a>
+                                    <span class = "like_btn"><i class="fa fa-heart-o" aria-hidden="true"></i><i class="fa fa-heart" aria-hidden="true"></i></span>
+                                    <span class="good_name">
+                                        <a href="good_page.html"><h2>Торт "Эстерхази"</h2></a>
+                                        <span class="price"></span>
+                                        <span class="good_desc">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit iusto autem delectus dolores
+                                        </span>
+                                        <button class="add_to_cart">В корзину</button>
+                                    </span>
+                                </div>
+                            </li>
+                            <li><a href="">
+                                <div class="one_good" data-art = "10003" price = "320">
+                                    <a href="good_page.html"><img src="images/cheese_choc.png"></a>
+                                    <span class = "like_btn"><i class="fa fa-heart-o" aria-hidden="true"></i><i class="fa fa-heart" aria-hidden="true"></i></span>
+                                    <span class="good_name">
+                                        <a href="good_page.html"><h2>Чизкейк "Шоколадный"</h2></a>
+                                        <span class="price"></span>
+                                        <span class="good_desc">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit iusto autem delectus dolores
+                                        </span>
+                                        <button class="add_to_cart">В корзину</button>
+                                    </span>
+                                </div>
+                            </a></li>
+                            <li><a href="">
+                                <div class="one_good" data-art = "10004" price = "540">
+                                    <a href="good_page.html"><img src="images/cake_drunk_cherry.png"></a>
+                                    <span class = "like_btn"><i class="fa fa-heart-o" aria-hidden="true"></i><i class="fa fa-heart" aria-hidden="true"></i></span>
+                                    <span class="good_name">
+                                        <a href="good_page.html"><h2>Торт "Пьяная вишня"</h2></a>
+                                        <span class="price"></span>
+                                        <span class="good_desc">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit iusto autem delectus dolores
+                                        </span>
+                                        <button class="add_to_cart">В корзину</button>
+                                    </span>
+                                </div>
+                            </a></li>
+                            <li><a href="">
+                                <div class="one_good" data-art = "10005" price = "310">
+                                    <a href="good_page.html"><img src="images/cake_zakher.png"></a>
+                                    <span class = "like_btn"><i class="fa fa-heart-o" aria-hidden="true"></i><i class="fa fa-heart" aria-hidden="true"></i></span>
+                                    <span class="good_name">
+                                        <a href="good_page.html"><h2>Торт "Захер"</h2></a>
+                                        <span class="price"></span>
+                                        <span class="good_desc">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit iusto autem delectus dolores
+                                        </span>
+                                        <button class="add_to_cart">В корзину</button>    
+                                    </span>
+                                </div>
+                            </a></li>
+                            <li><a href="">
+                                <div class="one_good" data-art = "10006" price = "295">
+                                    <a href="good_page.html"><img src="images/cake_esterkhazy.png" ></a>
+                                    <span class = "like_btn"><i class="fa fa-heart-o" aria-hidden="true"></i><i class="fa fa-heart" aria-hidden="true"></i></span>
+                                    <span class="good_name">
+                                        <a href="good_page.html"><h2>Торт "Эстерхази"</h2></a>
+                                        <span class="price"></span>
+                                        <span class="good_desc">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit iusto autem delectus dolores
+                                        </span>
+                                        <button class="add_to_cart">В корзину</button>
+                                    </span>
+                                </div>
+                            </a></li>
+                            <li><a href="">
+                                <div class="one_good" data-art = "10007" price = "499">
+                                    <a href="good_page.html"><img src="images/cheese_choc.png"></a>
+                                    <span class = "like_btn"><i class="fa fa-heart-o" aria-hidden="true"></i><i class="fa fa-heart" aria-hidden="true"></i></span>
+                                    <span class="good_name">
+                                        <a href="good_page.html"><h2>Чизкейк "Шоколадный"</h2></a>
+                                        <span class="price"></span>
+                                        <span class="good_desc">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit iusto autem delectus dolores
+                                        </span>
+                                        <button class="add_to_cart">В корзину</button>
+                                    </span>
+                                </div>
+                            </a></li>
+                            <li><a href="">
+                                <div class="one_good" data-art = "10008" price = "377">
+                                    <a href="good_page.html"><img src="images/cake_drunk_cherry.png"></a>
+                                    <span class = "like_btn"><i class="fa fa-heart-o" aria-hidden="true"></i><i class="fa fa-heart" aria-hidden="true"></i></span>
+                                    <span class="good_name">
+                                        <a href="good_page.html"><h2>Торт "Пьяная вишня"</h2></a>
+                                        <span class="price"></span>
+                                        <span class="good_desc">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit iusto autem delectus dolores
+                                        </span>
+                                        <button class="add_to_cart">В корзину</button>
+                                    </span>
+                                </div>
+                            </a></li>
+                            <li><a href="">
+                                <div class="one_good" data-art = "10009" price = "199">
+                                    <a href="good_page.html"><img src="images/cake_esterkhazy.png"></a>
+                                    <span class = "like_btn"><i class="fa fa-heart-o" aria-hidden="true"></i><i class="fa fa-heart" aria-hidden="true"></i></span>
+                                    <span class="good_name">
+                                        <a href="good_page.html"><h2>Торт "Эстерхази"</h2></a>
+                                        <span class="price"></span>
+                                        <span class="good_desc">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit iusto autem delectus dolores
+                                        </span>
+                                        <button class="add_to_cart">В корзину</button>
+                                    </span>
+                                </div>
+                            </a></li>
+                            <script>
+                                let items = document.getElementsByClassName("one_good");
+                                for (let i = 0; i < items.length; i++) {
+                                    let attr = items[i].getAttribute("price");
+                                    let item = items[i].getElementsByClassName("price")[0];
+                                    item.innerText = "Цена: " + attr + " руб.";
+                                }
+                            </script>
+                        </ul>
+                        <div class = "right_arr"></div>
+                        <script src = "slider.js"></script>
+                    </div>
+                </section><hr>
+            </article>
+            <script src="add_to_liked.js"></script>
+            <script src="add_to_cart.js"></script>
+            <aside>
+                <input type = "checkbox" id = "socials_arrow_checkbox" width="100px" height="100px" hidden>
+                <div id = "logreg_socials">
+                    <ul>
+                        <li>
+                            <i class="fa fa-github" aria-hidden="true"></i></li>
+                        <li>
+                            <i class="fa fa-telegram" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-vk" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </li>
+                    </ul>
+                </div>
+                <label id = "socials_arrow" for = "socials_arrow_checkbox" onclick></label>
+            </aside>
+        </main>    
+        <footer>
+            <ul>
+                <li id="info">
+                    <span>О нас:</span>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur libero, nihil at quisquam amet earum modi ad sapiente repellendus suscipit repudiandae deleniti totam possimus. Placeat quod numquam maiores ducimus! Maxime!
+                </li>
+                <li id="navigation">
+                    <span>Навигация:</span>
+                    <ul>
+                        <li><a href = "index.html">Главная</a></li>
+                        <li><a href = "catalog.html">Каталог</a></li>
+                        <li><a href = "personal_order_form.html">Под заказ</a></li>
+                        <li><a href = "about_us.html">О нас</a></li>
+                        <li><a href = "Q&A.html">Q&A</a></li>
+                    </ul>
+                </li>
+                <li id="categories">
+                    <span>Каталог:</span>
+                    <ul>
+                        <li><a href = "catalog.html #tarts">Тарталетки</a></li>
+                        <li><a href = "catalog.html #cheesecakes">Чизкейки</a></li>
+                        <li><a href = "catalog.html #pies">Пироги</a></li>
+                        <li><a href = "catalog.html #bisquits">Пирожные</a></li>
+                        <li><a href = "catalog.html #cakes">Торты</a></li>
+                    </ul>
+                </li>
+                <li id="contacts">
+                    <span>Контакты:</span>
+                    <ul>
+                        <li><a href="tel:+7(991)537-44-15"><img src = "images/phone_icon.png">Телефон: +7(991)537-44-15</a></li>
+                        <li><a href="mailto:hitrov.qazws@gmail.com"><img src = "images/mail_icon.png">E-mail: hitrov.qazws@gmail.com</a></li>
+                        <li><a href="https://yandex.ru/maps/-/CCUVnGu11B" target="_blank"><address><img src = "images/map_point_icon.png">Адресс: 11-я парковая улица, д36</address></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>

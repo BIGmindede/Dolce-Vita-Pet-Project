@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Вход/Регистрация</title>
+        <link rel = "stylesheet" href = "logreg.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="icon" type = "image/png" sizes = "32x32" href="fav.png">
+    </head>
+    <body>        
+        <main>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <article>
+                <section id = "logreg_nav">
+                    <nav>
+                        <ul>
+                            <li><label for="login" onclick>Вход</label></li>
+                            <li><label for="regis" onclick>Регистрация</label></li>
+                        </ul>
+                    </nav>
+                </section>
+                <input type="radio" hidden checked  id = "login" name="log_or_reg">
+                <input type="radio" hidden id = "regis" name="log_or_reg">
+                <hr>
+                <section id = "Log" id = "login">
+                    <h1>Вход</h1>
+                    <form method = "get">
+                        <input type = "text" class = "nickname_input" name = "nickname" placeholder="Логин">
+                        <input type="password" class = "password_input" placeholder="Пароль">
+                        <button class = "auth_button">Войти</button>
+                    </form>
+                </section>
+                <section id = "Reg" id = "regis">
+                    <h1>Регистрация</h1>
+                    <form method = "get">
+                        <input type = "text" class = "nickname_input" name = "nickname" placeholder="Придумайте логин">
+                        <input type="password" class = "password_input" placeholder="Придумайте пароль">
+                        <input type="password" class = "password_input" placeholder="Повторите пароль">
+                        <button class = "auth_button">Регистрация</button>
+                    </form>
+                </section>
+                <script src = "task1.js"></script>
+                <script src = "task2.js"></script>
+                <script src="auth.js"></script>
+                <section id = "footer_nav">
+                    <ul>
+                        <li>
+                            <a id = "pass_recov_link" href="#">Забыли пароль?</a><br>
+                            <a id = "leave_guest" href="index.html">Оставить гостевой вход</a>
+                        </li>
+                        <li id = "logreg_socials">
+                            <ul>
+                                <li>
+                                    <i class="fa fa-github" aria-hidden="true"></i></li>
+                                <li>
+                                    <i class="fa fa-telegram" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                    <i class="fa fa-vk" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+        </main>
+    </body>
+</html>

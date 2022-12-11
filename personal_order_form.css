@@ -1,0 +1,249 @@
+* {
+    font-family: Century Gothic;
+}
+
+#personal_order {
+    margin: 0 auto;
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    padding: 3vw;
+    background-color: #fdfff5;
+    box-shadow: 0 0 0.3vw 0.1vw lightgray;
+}
+
+#personal_order > *{
+    margin: 3vw auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (min-width:75vh){
+    #personal_order > form {
+        margin: 0 auto;
+        width: 60%;
+}
+
+}
+#personal_order > form div{
+    margin: 0 auto;
+    width: 45%;
+}
+
+#personal_order input{
+    display: block;
+    position: relative;
+    width: calc(10vh + 10vw);
+    height: calc(1.5vh + 1.5vw);
+    font-size: 1.6vw;
+    border: 0;
+    border-bottom: 0.25vh solid #230a00;
+}
+
+#personal_order p input[type="checkbox"] {
+    float: left;
+    width: calc(0.7vh + 0.7vw);
+    height: calc(0.7vh + 0.7vw);
+    margin: calc(0.1vh + 0.1vw) 1vh 0 0;
+}
+
+textarea {
+    resize: none;
+    height: 11.5vw;
+    width: 25vw;
+    font-size: 1.5vw;
+}
+
+textarea:focus {
+    outline: 0;
+}
+#submit_p_o {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    width: 15vw;
+    height: 3vw;
+    margin: 3vmax auto 0 auto;
+    font-size: 1.3vw;
+    border: none;
+    color:#230a00;
+    background-color: #c69c6d;
+    transition: background-color 0.25s ease-in-out;
+}
+
+#submit_p_o::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background-color:#230a00;
+    width: 0vh;
+    height: 0.25vw;
+    transition: width 0.5s ease-in-out;
+}
+
+#submit_p_o::after {
+    position: absolute;
+    bottom:0;
+    right: 0;
+    content: "";
+    background-color:#230a00;
+    width: 0vh;
+    height: 0.25vw;
+    transition: width 0.5s ease-in-out;
+}
+
+#submit_p_o:hover::before{
+    content: "";
+    width: 100%;
+}
+
+#submit_p_o:hover {
+    cursor: pointer;
+    color:#230a00;
+    background-color: #947048;
+}
+
+#submit_p_o:hover::after{
+    content: "";
+    width: 100%;
+}
+
+#submit_p_o:active:before{
+    content: "";
+}
+
+#submit_p_o:active {
+    cursor: pointer;
+    color:#230a00;
+    background-color: #d9b489;
+}
+
+#submit_p_o:active::after{
+    content: "";
+}
+
+#personal_order p {
+    display: block;
+    position: relative;
+    margin: 1vw 0 1vw 0;
+}
+
+#personal_order > div {
+    display: block;
+    width: 30%;
+	padding: 0.5vw;
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+
+@media (max-width: 75vh) {
+
+    #personal_order > div,form,hr {
+        width: 90%;
+    }
+
+    #personal_order input{
+        width: 80%;
+        height: 2.5vh;
+        font-size: 2vh;
+    }
+    
+    #personal_order p input{
+        width: 1vh;
+        height: 1vh;
+        margin: 0.25vh 1vh 0 0;
+    }
+    
+    textarea {
+        height: 11.5vh;
+        width: 100%;
+        font-size: 2vh;
+    }
+    #submit_p_o {
+        width: 100%;
+        height: 6vh;
+        margin: 2vh 0;
+        font-size: 2vh;
+    }
+
+    #submit_p_o::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        background-color:#230a00;
+        width: 0vh;
+        height: 0.6vh;
+        transition: width 0.5s ease-in-out;
+    }
+    
+    #submit_p_o::after {
+        position: absolute;
+        bottom:0;
+        right: 0;
+        content: "";
+        background-color:#230a00;
+        width: 0vh;
+        height: 0.6vh;
+        transition: width 0.5s ease-in-out;
+    }
+    
+    #submit_p_o:hover::before{
+        content: "";
+        width: 100%;
+    }
+    
+    #submit_p_o:hover {
+        cursor: pointer;
+        color:#230a00;
+        background-color: #947048;
+    }
+    
+    #submit_p_o:hover::after{
+        content: "";
+        width: 100%;
+    }
+    
+    #submit_p_o:active:before{
+        content: "";
+    }
+    
+    #submit_p_o:active {
+        cursor: pointer;
+        color:#230a00;
+        background-color: #d9b489;
+    }
+    
+    #submit_p_o:active::after{
+        content: "";
+    }
+
+    #personal_order p input[type="checkbox"] {
+        float: left;
+        width: 2vh;
+        height: 2vh;
+        margin: 1vw 1vw 0 0;
+    }
+}
+
+@media (max-width: 64vh) {
+    #personal_order > form > div {
+        width: 90%;
+    }
+    #personal_order input{
+        width: 100%;
+        height: 5vh;
+        font-size: 1.8vh;
+    }
+    #submit_p_o {
+        width: 100%;
+        height: 7vh;
+        margin: 2vh 0;
+        font-size: 2vh;
+    }
+    
+}

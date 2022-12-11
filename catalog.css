@@ -1,0 +1,322 @@
+#catalog {
+    background-color: #fdfff5;
+    text-align: center;
+}
+
+#catalog {
+    position: relative;
+}
+
+.goods_catalog {
+    position: relative;
+    width: 100%;
+    margin: 1.7vw auto;
+    column-gap: 3vw;
+    column-width: 17vw;
+}
+
+.goods_catalog figure{
+    /* display: none; */
+    position: relative;
+    display: inline-block;
+    margin-bottom: 5vh;
+    padding: 0 0.25%;
+    transition: left 0.25s ease, display 0.25s ease;
+    -webkit-column-break-inside: avoid;
+}
+
+.goods_catalog figure div {
+    background-color: unset;
+    float: left;
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    transition: all 0.25s ease-in-out; 
+}
+
+.goods_catalog figure div img{
+    width: 100%;
+    box-shadow: 0 0 0.5vmax 0.05vmax black;
+    transition: all 0.5s ease-in-out; 
+}
+
+.goods_catalog figure div .like_btn {
+    position: absolute;
+    left: 71%;
+    top: 7%;
+    width: 4vw;
+    height: 4vw;
+    font-size:2vw;
+    color: #230a00;
+    backdrop-filter: blur(5px);
+    background-color: #6d6d6d77;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.like_btn i {
+    position: absolute;
+    left: 50%;
+    margin-top: 53%;
+    transform: translateY(-50%) translateX(-50%);
+    transition: all 0.5s ease-in-out;
+}
+
+.goods_catalog figure div .like_btn:hover{
+    background-color: #230a00;
+}
+
+
+.fa-heart-o {
+    color:#230a00;
+    opacity: 1;
+}
+
+.fa-heart {
+    color:#000;
+    opacity: 0;
+}
+
+.like_btn:hover .fa-heart-o{
+    color:#c69c6d;
+}
+
+.like_btn:hover .fa-heart{
+    color:#c69c6d;
+}
+
+.goods_catalog .good_name {
+    display: block;
+    position: absolute;
+    color: #230a00;
+    bottom: -10%;
+    left: -2%;
+    width: 104%;
+    height: 27%;
+    margin: 0 auto;
+    padding: 3% 5%;
+    overflow: hidden;
+    box-shadow: 0 0 0.5vmax 0.05vmax black;
+    transition: all 0.5s ease-in-out; 
+}
+
+.goods_catalog .good_name::before {
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #c69c6d;
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+}
+
+.goods_catalog .good_name * {
+    z-index: 2;
+}
+
+.good_name a {
+    text-decoration: none;
+}
+
+.good_name a:hover {
+    text-decoration: underline;
+    color: #230a00;
+}
+
+.good_name a h2 {
+    color: #230a00;
+    position: relative;
+    font-size: 1.3vmax;
+}
+
+.good_name .price {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top:3.5vmax;
+    transform: translateX(-50%);
+    font-size: 1.1vmax;
+}
+
+.good_desc::before {
+    content: "";
+    background-color: #230a00;
+    position: absolute;
+    display: block;
+    width: 90%;
+    left: 5%;
+    height: 0.25vmax;
+    top: -0.25vmax;
+}
+
+.good_desc {
+    position: absolute;
+    left: 0;
+    top: 5.5vmax;
+    width: 100%;
+    padding: 1vh;
+    display: block;
+    font-size: 1.2vmax;
+}
+
+.good_name .add_to_cart {
+    position: absolute;
+    cursor: pointer;
+    width: 90%;
+    height: 15%;
+    left: 5%;
+    bottom: 5%;
+    background-color: #230a00;
+    color: #c69c6d;
+    font-size: 1.3vmax;
+    border: none;
+    transition: all 0.5s ease-in-out; 
+    visibility: hidden;
+    opacity: 0;
+}
+
+.good_name .add_to_cart:hover {
+    transform: scale(1.03);
+}
+
+.goods_catalog div:hover > img {
+    transform: scale(1.05);
+}
+
+.goods_catalog div:hover > .good_name {
+    height: 73%;
+    transform: scale(1.05);
+}
+
+.goods_catalog div:hover > span .add_to_cart{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.goods_catalog div:hover > span::before {
+    backdrop-filter: blur(10px);
+    background-color: #6d6d6d99;
+}
+
+/* ----------------------------------------------------------------------------------------- */
+
+@media (max-width: 100vh) {
+    
+    .goods_catalog .good_name {
+        margin: 1vmax auto;
+        color: #230a00;
+        left: -1%;
+        height: 6vh;
+        width: 102%;
+        margin: 0 auto;
+        box-shadow: 0 0 0.5vmax 0.05vmax black;
+    }
+    
+    .goods_catalog div:hover > .good_name {
+        height: 78%;
+    }
+
+    .good_name a h2 {
+        font-size: 1.1vh;
+    }
+    
+    .good_name .price {
+        position: absolute;
+        top: 4vw;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.05vh;
+    }
+
+    .good_name .add_to_cart {
+        font-size: 1.1vh;
+    }
+    
+    .good_desc {
+        position: absolute;
+        left: 0;
+        top: 5.5vmax;
+        width: 100%;
+        padding: 0.35vh 1vh;
+        display: block;
+        font-size: 1vh;
+    }
+
+}
+
+/* ---------------------------------------------------------------------------- */
+
+@media (max-width: 75vh) {
+
+    .goods_catalog {
+        position: relative;
+        width: 100%;
+        margin: 1.7vw auto;
+        column-gap: 5vw;
+        column-width: 35vw;
+    }
+
+    .goods_catalog figure div .like_btn {
+        position: absolute;
+        left: 71%;
+        top: 7%;
+        width: 8vw;
+        height: 8vw;
+        font-size:4vw;
+    }
+
+    .goods_catalog .good_name {
+        margin: 1vmax auto;
+        color: #230a00;
+        bottom: -13%;
+        left: -1%;
+        height: 8vh;
+        width: 102%;
+        margin: 0 auto;
+        box-shadow: 0 0 0.5vmax 0.05vmax black;
+    }
+
+    .good_name a h2 {
+        font-size: 1.6vh;
+    }
+
+    .good_name .price {
+        position: absolute;
+        top: 4vh;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.5vh;
+    }
+    
+    .good_desc::before {
+        content: "";
+        background-color: #230a00;
+        position: absolute;
+        display: block;
+        width: 90%;
+        left: 5%;
+        height: 0.35vmax;
+        top: -0.25vmax;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .good_desc {
+        position: absolute;
+        left: 0;
+        top: 7vh;
+        width: 100%;
+        padding: 1vh;
+        display: block;
+        font-size: calc(0.8vh + 0.75vw);
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .good_name .add_to_cart {
+        font-size: 1.5vh;
+    }
+
+}

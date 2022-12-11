@@ -1,0 +1,581 @@
+* {
+    font-family: Century Gothic;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/banner.jpg);
+    background-repeat: no-repeat;
+    background-color:#230a00;
+    background-size: 100%;
+    font-family: Century Gothic;
+    overflow: auto;
+    display: block;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    margin-top: 37vw;
+    background-color: #ffffff;
+    box-shadow: 0 0 0.3vw 0.1vw black;
+    z-index: 2;
+    overflow: hidden;
+}
+
+article {
+    padding: 1.7vw;
+}
+
+section {
+    position: relative;
+    background-color: #fdfff5;
+    box-shadow: 0 0 0.3vw 0.1vw lightgray;
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+    padding: 1vw;
+}
+
+section h2 hr{
+    display:inline-block;
+    position: relative;
+    width: 25%;
+    margin: 0.5vw 3vw;
+}
+
+h1 {
+    text-align: center;
+    font-family: Century Gothic light;
+    font-size: 2.7vw;
+    padding: 1vw;
+    display: block;
+}
+h2 {
+    text-align: center;
+    font-family: Century Gothic light;
+    font-size: 2.1vw;
+    padding: 1vw;
+    display: block;
+}
+h3 {
+    text-align: center;
+    font-family: Century Gothic light;
+    font-size: 1.5vw;
+    padding: 0vw;
+    display: block;
+}
+h4 {
+    text-align: center;
+    font-family: Century Gothic light;
+    font-size: 0.9vw;
+    padding: 1vw;
+    display: block;
+}
+h5 {
+    text-align: center;
+    font-family: Century Gothic light;
+    font-size: 0.7vw;
+    padding: 1vw;
+    display: block;
+}
+h6 {
+    text-align: center;
+    font-family: Century Gothic light;
+    font-size: 0.6vw;
+    padding: 1vw;
+    display: block;
+}
+
+cite {
+    font-size: 1.5vw;
+    display: block;
+}
+
+p {
+    font-size: 1.5vw;
+}
+
+#logreg_socials {
+    display: flex;
+    margin: 0 auto;
+    background-color: #fdfff5;
+    border: 0.25vh solid #230a00;
+    border-radius: 1vh 0 0 1vh;
+    background-size: 30.5vh 7vh;
+    background-repeat: no-repeat;
+    height: 30.5vh;
+    width: 7vh;
+    position: fixed;
+    bottom: 37vh;
+    right: -6.25vh;
+    transition: right 0.25s ease-in-out;
+    z-index: 4;
+}
+
+#logreg_socials li {
+    position: relative;
+    float: left;
+    width: 5vh;
+    height: 5vh;
+    margin: 0.5vh 0.75vh;
+    border-radius: 50%;
+    font-size: 2.5vh;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    background-color: #230a00;
+    z-index: 1;
+}
+
+#logreg_socials li i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease-in-out;
+    color: #fdfff5;
+    z-index: 3;
+}
+
+#logreg_socials li:hover {
+    background-color: unset;
+}
+
+#logreg_socials li:hover i {
+    color: #230a00;
+}
+
+#logreg_socials li::after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 100%;
+    height: 100%;
+    width: 100%;
+    transform: rotateZ(45deg);
+    background-color: #230a00;
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+
+@keyframes logreg_socials {
+    0% {
+        left: 100%;
+        top: 100%;        
+        background-color: #230a00;
+    }
+    50% {
+        left: -25%;
+        top: -25%;
+    }
+    85% {
+        left: 20%;
+        top: 20%;
+    }
+    100% {
+        background-color: #a8845b;
+        left: 0%;
+        top: 0%;
+    }
+}
+
+#logreg_socials li:hover::after {
+    animation: 1s logreg_socials ease-in-out;
+    background-color: #a8845b;
+    background-image: linear-gradient(160deg, #ebd0a7, #d0a678, #8c5e47);
+    left: 0%;
+    top: 0%;
+} 
+
+#socials_arrow {
+    background-image: url(images/arrow_left.png);
+    background-color: #fff;
+    background-size: 1.5vh 3vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 2.5vh;
+    height: 5vh;
+    position: fixed;
+    right: 0.5vh;
+    bottom: 49.5vh;
+    border:0.25vh solid black;
+    transition: all 0.25s ease, transform 0.5s ease-in-out, right 0.25s ease-in-out;
+    z-index: 4;
+}
+
+#socials_arrow:hover {
+    background-color: #c69c6d;
+    cursor: pointer;
+}
+
+#socials_arrow_checkbox:checked ~ #socials_arrow{
+    background-color: #c69c6d;
+    transform: rotateY(180deg);
+    right: 6.5vh;
+}
+
+#socials_arrow_checkbox:checked ~ #logreg_socials{
+    right: -0.25vh;
+}
+
+/* 
+#only_2_prac img{
+    float: left;
+    height: 3vw;
+    width: 70vw;
+} */
+
+footer {
+    position: relative;
+    background-color: #230a00;
+    width: 100%;
+    padding: 2vh;
+    box-shadow: 0 0 0.3vw 0.1vw black;
+    z-index: 2;
+    color: #c69c6d;
+    font-size: calc(0.7vw + 0.5vh);
+}
+
+footer a {
+    color: #c69c6d;
+    text-decoration: none;
+}
+
+footer ul {
+    list-style: none;
+    position:relative;
+}
+
+footer > ul {
+    display: grid;
+    grid-template-columns: 40% repeat(2, 15%) 30%;
+}
+
+footer > ul > li{
+    position:relative;
+    display: block;
+    padding: 0 2vh;
+    margin: 1vh auto;
+}
+
+footer > ul > li > ul > li{
+    margin: 1vh auto;
+}
+
+footer li span{
+    position: relative;
+    display: block;
+    font-size: calc(1.5vw + 0.5vh);
+    color: #fdfff5;
+    margin: 2vh 0;
+}
+
+#categories li::before, #navigation li::before {
+    content: ">";
+}
+
+#categories li:hover, #navigation li:hover {
+    text-decoration: underline;
+}
+
+footer span::after {
+    content: "";
+    display: block;
+    height: 0.2vh;
+    background-color: #fdfff5;
+}
+
+#info span::after{
+    width: calc(5vw + 2vh);
+}
+
+#navigation span::after{
+    width: calc(8.25vw + 3vh);
+}
+
+#categories span::after{
+    width: calc(6.25vw + 2.45vh);
+}
+
+#contacts span::after{
+    width: calc(7vw + 3vh);
+}
+
+footer img {
+    height: calc(0.9vw + 0.5vh);
+    padding-right: calc(0.4vw + 0.2vh);
+    margin-bottom: -0.15vw;
+}
+
+@media (max-width: 100vh) {
+    h1 {
+        text-align: center;
+        font-family: Century Gothic light;
+        font-size: 2.3vw;
+        padding: 1vw;
+        display: block;
+    }
+    h2 {
+        text-align: center;
+        font-family: Century Gothic light;
+        font-size: 1.9vw;
+        padding: 1vw;
+        display: block;
+    }
+    h3 {
+        text-align: center;
+        font-family: Century Gothic light;
+        font-size: 1.7vw;
+        padding: 0;
+        display: block;
+    }
+    h4 {
+        text-align: center;
+        font-family: Century Gothic light;
+        font-size: 1.5vw;
+        padding: 0;
+        display: block;
+    }
+    h5 {
+        text-align: center;
+        font-family: Century Gothic light;
+        font-size: 1.3vw;
+        padding: 1vw;
+        display: block;
+    }
+    h6 {
+        text-align: center;
+        font-family: Century Gothic light;
+        font-size: 1.1vw;
+        padding: 1vw;
+        display: block;
+    }
+    
+    cite {
+        font-size: 1.5vw;
+    } 
+    
+    span {
+        font-size: 1.5vw;
+    }
+
+    section h2 hr{
+        width: 11%;
+        margin: 0.5vw 3vw;
+    }
+
+    footer {
+        font-size: calc(1.3vw + 0.9vh);
+    }
+    
+    footer a {
+        color: #c69c6d;
+        text-decoration: none;
+    }
+    
+    footer ul {
+        list-style: none;
+        position:relative;
+    }
+    
+    footer > ul {
+        grid-template-columns: 23% 23% 54%;
+    }
+    
+    #info {
+        grid-area: 1 / 1 / 1 / 4;
+    }
+
+    footer > ul > li{
+        position:relative;
+        padding: 0 2vh;
+        margin: 1vh auto;
+    }
+    
+    footer > ul > li > ul > li{
+        margin: 1vh auto;
+    }
+    
+    footer li span{
+        font-size: calc(3vw + 0.3vh);
+        margin: 2vh 0;
+    }
+    
+    #categories li::before, #navigation li::before {
+        content: ">";
+    }
+    
+    footer span::after {
+        height: 0.25vh;
+    }
+    
+    #info span::after{
+        width: calc(9.2vw + 1.9vh);
+    }
+    
+    #navigation span::after{
+        width: calc(15.5vw + 2.5vh);
+    }
+    
+    #categories span::after{
+        width: calc(11.7vw + 2.2vh);
+    }
+    
+    #contacts span::after{
+        width: calc(13.2vw + 2.5vh);
+    }
+    
+    footer img {
+        height: calc(1.2vw + 0.7vh);
+        padding-right: calc(0.4vw + 0.2vh);
+        margin-bottom: -0.15vw;
+    }
+}
+
+/*----------------------------------------------------*/
+@media (max-width: 75vh) {
+body{
+    background-color: black;
+    background-position: 0 11vh;
+}
+    
+main {
+    position: relative;
+    width: 100%;
+    margin-top:25vh;
+    background-color: #ffffff;
+    box-shadow: 0 0 0.3vw 0.1vw black;
+    z-index: 1;
+    overflow: hidden;
+}
+
+section {
+    position: relative;
+    margin-top:1vh;
+}
+
+section h2 hr{
+    width: 11%;
+    margin: 0.5vw 3vw;
+}
+
+article {
+    padding: 1.7vw;
+}
+
+hr {
+    margin: auto auto;
+}
+
+h1 {
+    text-align: center;
+    font-family: Century Gothic light;
+    font-size: 4vh;
+    padding: 1vw;
+    display: block;
+}
+h2 {
+    text-align: center;
+    font-family: Century Gothic light;
+    font-size: 3.7vh;
+    padding: 1vw;
+    display: block;
+}
+h3 {
+    text-align: center;
+    font-family: Century Gothic light;
+    font-size: 3.5vh;
+    padding: 1vw;
+    display: block;
+}
+h4 {
+    text-align: center;
+    font-family: Century Gothic light;
+    font-size: 3.3vh;
+    padding: 1vw;
+    display: block;
+}
+h5 {
+    text-align: center;
+    font-family: Century Gothic light;
+    font-size: 3.2vh;
+    padding: 1vw;
+    display: block;
+}
+h6 {
+    text-align: center;
+    font-family: Century Gothic light;
+    font-size: 3.1vh;
+    padding: 1vw;
+    display: block;
+}
+
+span {
+    font-size: 2.7vh;
+}
+
+cite {
+    font-size: 2.7vh;
+}
+
+p {
+    font-size: 2.2vh;
+}
+
+#socials_arrow {
+    background-size: 3vh 6vh;
+    width: 4vh;
+    height: 7vh;
+    right: 0.5vh;
+    bottom: 48.75vh;
+}
+#socials_arrow_checkbox:checked ~ #socials_arrow{
+    right: 6.75vh;
+}
+
+#categories li::before, #navigation li::before {
+    content: ">";
+}
+
+footer {
+    font-size: calc(1vw + 0.5vh);
+}
+
+footer > ul {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+footer li span{
+    font-size: 3.5vh;
+    margin: 2vh 0;
+}
+
+#contacts {
+    grid-area: 3 / 1 / 3 / 3;
+}
+
+#info span::after{
+    width: 12vh;
+}
+
+#navigation span::after{
+    width: 19vh;
+}
+
+#categories span::after{
+    width: 15vh;
+}
+
+#contacts span::after{
+    width: 17vh;
+}
+
+footer img {
+    height: calc(1.2vw + 0.7vh);
+    padding-right: calc(0.4vw + 0.2vh);
+    margin-bottom: -0.15vw;
+}
+
+}

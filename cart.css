@@ -1,0 +1,125 @@
+#cart_list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3%;
+}
+
+#cart_list ul {
+    position: relative;
+    display: block;
+    width: 65%;
+    list-style: none;
+    margin: 0 3%;
+}
+
+#cart_list ul li{
+    display: inline-block;
+    width: 100%;
+    padding: 3%;
+}
+
+#cart_list ul img{
+    width: 20%;
+    margin: 2%;
+    float: left;
+}
+
+#cart_list ul h3{
+    text-align: left;
+    margin: 2%;
+}
+
+#cart_list ul cite{
+    text-align: left;
+    margin: 2%;
+    font-size: 1.3vw;
+}
+
+#cart_list ul span{
+    margin: 2%;
+    font-size: 1.3vw;
+}
+
+#cart_list ul button{
+    width: 2vw;
+    height: 2vw;
+    margin: 0.5vh;
+    background-color: #c69c6d;
+    border: none;
+    font-size: 1.3vw;
+    transition: all 0.25s ease-in-out;
+}
+
+#cart_list ul .del_btn {
+    width: 10vw;
+    margin-left: 2vw;
+}
+
+#cart_list ul button:hover {
+    transform: scale(1.03);
+}
+
+#text_cart_page {
+    display: block;
+    width: 27%;
+    padding: 3% 0 3% 3%;
+    text-align: center;
+}
+
+#empty {
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    color: silver;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 75vh) {
+    #cart_list ul {
+        width: 100%;
+    }
+    #text_cart_page {
+        width: 100%;
+        padding: 3%;
+    }
+
+    #cart_list ul img{
+        width: 100%;
+        margin: 0;
+    }
+
+    #cart_list ul cite{
+        font-size: 2.3vh;
+    }
+    #cart_list ul span{
+        font-size: 2.3vh;
+    }
+    #cart_list .price {
+        display: block;
+        width: 100%;
+    }
+    #cart_list ul button{
+        width: 4vh;
+        height: 4vh;
+        margin: 0.5vh;
+        background-color: #c69c6d;
+        border: none;
+        font-size: 2.3vh;
+        transition: all 0.25s ease-in-out;
+    }
+    #cart_list ul .del_btn {
+        width: 17vh;
+        margin-left: 3vh;
+    }
+
+    #empty {
+        position: relative;
+        width: 100%;
+        height: 10vh;
+        left: 0;
+        margin-top: 10vh;
+        color: silver;
+        transform: translateY(-50%);
+    }
+
+}

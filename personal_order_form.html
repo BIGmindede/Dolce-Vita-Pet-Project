@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel = "stylesheet" href = "style.css">
+        <link rel = "stylesheet" href = "header.css">
+        <link rel = "stylesheet" href = "personal_order_form.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <title>Под заказ</title>
+        <link rel="icon" type = "image/png" sizes = "32x32" href="fav.png">
+    </head>
+    <body>
+        <header>
+            <nav id = "navpan">
+                <ul>
+                    <li id = "search">
+                        <div id = "searchbox"><input type ="search" placeholder="Найти..."><img src = "images/search_button.png" id = "search_button"></div>
+                    </li>
+                    <li id = "navbar">
+                        <ul>
+                            <li id = "catalog"><a href = "catalog.html"><p>Каталог</p></a>
+                                <ul>
+                                    <li><a href = "catalog.html #cakes"><p>Торты</p></a></li>
+                                    <li><a href = "catalog.html #pies"><p>Пироги</p></a></li>
+                                    <li><a href = "catalog.html #cheesecakes"><p>Чизкейки</p></a></li>
+                                    <li><a href = "catalog.html #bisquits"><p>Пирожные</p></a></li>
+                                    <li><a href = "catalog.html #tarts"><p>Тарталетки</p></a></li>
+                                </ul>
+                            </li>
+                            <li><a href = "personal_order_form.html"><p>Под заказ</p></a></li>
+                            <li id = "title"><a href = "index.html"><img src = "images/logo.png"></a></li>
+                            <li><a href = "about_us.html"><p>О нас</p></a></li>
+                            <li><a href = "Q&A.html"><p>Q&A</p></a></li>
+                        </ul>
+                    </li>
+                    <li id = "user_field">
+                        <ul>
+                            <li id = "user_icon"><a href = "logreg.html"><img src = "images/user_icon.png"></a></li>
+                            <li id = "messages"><span id = "message_marker">3</span>
+                                <ul>
+                                    <li>
+                                        <table>
+                                            <tr>
+                                                <td class="message_id">
+                                                    <span>1</span>
+                                                </td>
+                                                <td class = "message_content">
+                                                    <h3>Уведомление 1</h3>
+                                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <table>
+                                            <tr>
+                                                <td class="message_id">
+                                                    <span>2</span>
+                                                </td>
+                                                <td class = "message_content">
+                                                    <h3>Уведомление 2</h3>
+                                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <table>
+                                            <tr>
+                                                <td class="message_id">
+                                                    <span>3</span>
+                                                </td>
+                                                <td class = "message_content">
+                                                    <h3>Уведомление 3</h3>
+                                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <table>
+                                            <tr>
+                                                <td class="message_id">
+                                                    <span>4</span>
+                                                </td>
+                                                <td class = "message_content">
+                                                    <h3>Уведомление 4</h3>
+                                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li><p id = "user_name"><a href = "logreg.html">User1234567891011</a></p>
+                                        <script src="trancate.js"></script>
+                                    </li>
+                                    <li id = "goods">
+                                        <a href = "cart.html"><img id = "cart_icon" src = "images/cart_icon.png"></a>
+                                        <a href = "liked.html"><img id = "liked_icon" src = "images/liked_icon.png"></a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <nav id = "burger-menu">
+                <input type="checkbox" name="burger_menu_toggle" id="burger_menu_toggle" hidden>
+                <ul id = "title">
+                    <li id="burger_menu_checkbox">
+                        <label id = "burger_menu_label" for="burger_menu_toggle" onclick><span id = "burger_menu_icon"></span></label>
+                    </li>
+                    <li id="burger_menu_logo">
+                        <a id = "logo" href = "index.html"><img src = "images/logo.png"></a>
+                    </li>
+                </ul>
+                <ul>
+                    <li><a href="logreg.html"><p>Учетная запись</p></a></li>
+                    <li><a href="cart.html"><p>Kорзина</p></a></li>
+                    <li><a href="liked.html"><p>Понравившиеся</p></a></li>
+                    <li id = "catalog_burger_menu"><a href="catalog.html"><p>Каталог</p></a></li>
+                    <li><a href = "personal_order_form.html"><p>Под заказ</p></a></li>
+                    <li><a href = "about_us.html"><p>О нас</p></a></li>
+                    <li><a href = "Q&A.html"><p>Q&A</p></a></li>
+                </ul>
+                    
+            </nav>
+        </header>
+        
+        <main>
+            <article><h1>Сделайте персональный заказ</h1><hr>
+                <section id = "personal_order">
+                    <form action="" method = "post">
+                        <div>
+                            <p><label for="">*Фамилия</label></p>
+                            <input type="text" name = "sername" placeholder="Хитров">
+                            <p><label for="">*Имя</label></p>
+                            <input type="text" name = "name" placeholder="Никита">
+                            <p><label for="tel">*Телефон</label></p>
+                            <input type="tel" name = "tel" placeholder="+7(XXX) XXX-XX-XX">
+                            <p><label for="mail">*E-mail</label></p>
+                            <input type="email" name = "mail" placeholder="XXXXX@...">                                  
+                        </div>
+                        <div>
+                            <p><label for="order_descript">Опишите заказ<br>(по желанию)</label></p>
+                            <textarea type="text" type = "area" rows = "20" cols = "20" name = "order_descript" maxlength="1000" placeholder="Красивый тортик..."></textarea>
+                            <!-- <p><input type = "radio" name = "contact_type"><label for="contact_type">Связвться по телефону</label></p>
+                            <p><input type = "radio" name = "contact_type"><label for="contact_type">Связвться по E-mail</label></p> -->
+                            <p><input  type="checkbox" name = "checkbox"><label for="checkbox">*Принимаю условия</label></p>
+                            <button id = "submit_p_o" type = "submit">Отправить</button>
+                        </div>
+                    </form><hr>
+                    <div>   
+                        <h2>Заполните форму!</h2>
+                        <cite style = "text-align: center;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, quisquam iste. Alias consectetur nisi beatae temporibus, inventore eius quae vitae ratione quia tempora delectus accusantium, veritatis quibusdam quos earum fugit!
+                        </cite>
+                    </div>
+                </section>
+                <hr>
+            </article>
+            <aside>
+                <input type = "checkbox" id = "socials_arrow_checkbox" width="100px" height="100px" hidden>
+                <div id = "logreg_socials">
+                    <ul>
+                        <li>
+                            <i class="fa fa-github" aria-hidden="true"></i></li>
+                        <li>
+                            <i class="fa fa-telegram" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-vk" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </li>
+                    </ul>
+                </div>
+                <label id = "socials_arrow" for = "socials_arrow_checkbox" onclick></label>
+            </aside>
+        </main>
+        <footer>
+            <ul>
+                <li id="info">
+                    <span>О нас:</span>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur libero, nihil at quisquam amet earum modi ad sapiente repellendus suscipit repudiandae deleniti totam possimus. Placeat quod numquam maiores ducimus! Maxime!
+                </li>
+                <li id="navigation">
+                    <span>Навигация:</span>
+                    <ul>
+                        <li><a href = "index.html">Главная</a></li>
+                        <li><a href = "catalog.html">Каталог</a></li>
+                        <li><a href = "personal_order_form.html">Под заказ</a></li>
+                        <li><a href = "about_us.html">О нас</a></li>
+                        <li><a href = "Q&A.html">Q&A</a></li>
+                    </ul>
+                </li>
+                <li id="categories">
+                    <span>Каталог:</span>
+                    <ul>
+                        <li><a href = "catalog.html #tarts">Тарталетки</a></li>
+                        <li><a href = "catalog.html #cheesecakes">Чизкейки</a></li>
+                        <li><a href = "catalog.html #pies">Пироги</a></li>
+                        <li><a href = "catalog.html #bisquits">Пирожные</a></li>
+                        <li><a href = "catalog.html #cakes">Торты</a></li>
+                    </ul>
+                </li>
+                <li id="contacts">
+                    <span>Контакты:</span>
+                    <ul>
+                        <li><a href="tel:+7(991)537-44-15"><img src = "images/phone_icon.png">Телефон: +7(991)537-44-15</a></li>
+                        <li><a href="mailto:hitrov.qazws@gmail.com"><img src = "images/mail_icon.png">E-mail: hitrov.qazws@gmail.com</a></li>
+                        <li><a href="https://yandex.ru/maps/-/CCUVnGu11B" target="_blank"><address><img src = "images/map_point_icon.png">Адресс: 11-я парковая улица, д36</address></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>

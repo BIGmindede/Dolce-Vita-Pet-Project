@@ -1,0 +1,526 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    height: 6vw;
+    z-index: 3;
+    top:0;
+    position: sticky;
+}
+
+header a {
+    text-decoration: none;
+    color: #3e1f0b;
+}
+
+#navpan {
+    position: relative;
+    width:100%;
+    height:6vw;
+    border-bottom: 0.3vw solid #875f42;
+    background-color: #ffffff;
+    box-shadow: 0 0 0.3vw 0.1vw black;
+    font-size: 1.5vw;
+}
+
+#burger-menu {
+    display: none;
+    box-shadow: 0 0 1.2vw 0.3vw black;
+}
+
+#navpan > ul > li {
+    position: relative;
+    float: left;
+    height: 6vw;
+}
+
+#search {
+    width:15%;
+    height: 6vw;
+    top: 0;
+    padding: 0vw;
+}
+
+#searchbox {
+    height: 3vw;
+    margin: 2.4vw 0 0 1vw;
+}
+
+#searchbox input {
+    height: 2vw;
+    margin-top: 0.5vw;
+    width: 80%;
+    float: left;
+    border-radius: 0.3vw;
+    border: 0.1vw solid black;
+    font-size: 0.9vw;
+    font-family: Century Gothic;
+}
+
+#searchbox input::placeholder {
+    font-family: Century Gothic;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    appearance: none;
+    width: 1vw;
+    height: 1vw;
+    background-image: url(images/cancel_button.png);
+    background-size: 1vw 1vw;
+    background-repeat: no-repeat;
+    margin-left: 0.2vw;
+}
+
+input[type="search"]::-webkit-search-cancel-button:hover {
+    cursor: pointer;
+}
+
+input:focus {
+    outline: 0;
+}
+
+#searchbox img {
+    height: 1.2vw;
+    margin-left: 3%;
+    margin-top: 0.9vw;
+    float: left;
+}
+
+header ul{
+    list-style: none;
+}
+
+#navbar {
+    width: 70%;
+    height: 6vw;
+}
+
+#catalog > ul {
+    position: relative;
+    width: 100%;
+    top: 1.2vw;
+    transition: opacity 0.5s ease-in-out;
+    box-shadow: 0 0.075vmax 0.25vmax 0.0075vmax black;   
+}
+
+#catalog ul{
+    opacity: 0;
+}
+
+#catalog > ul > li {
+    display: none;
+    background-color: #ffffff;
+    width: 100%;
+    float: top;
+    margin: 0;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+#navbar li:hover > ul > li{
+    display: block;
+}
+
+#navbar li:hover > ul{
+    opacity: 1;
+}
+
+.arrow_right {
+    float: right;
+    margin-right: 1vw;
+    margin-top:-1vw;
+}
+
+#title img {
+    height: 4.5vw;
+    padding: 0;
+}
+
+#navbar #title {
+    width:40%;
+    padding:0;
+    margin-top: 0.7vw;
+}
+
+#navbar li{
+    position: relative;
+    float: left;
+    color: #3e1f0b;
+    text-align: center;
+    margin-top: 3vw;
+    width: 15%;
+    
+}
+
+#navbar li p {
+    transition: color 0.25s ease;
+}
+ 
+#navbar li p:hover{
+    color: #c69c6d;
+}
+
+#navbar li p:active {
+    transition: color 0.05s ease;
+    transform: scale(0.975);
+    color: #3e1f0b;
+}
+
+#user_name a {
+    text-decoration: underline;
+}
+
+#user_field {
+    width: 15%;
+    height: 1vw;
+}
+
+#user_field ul{
+    float: left;
+}
+
+#user_field > ul > li {
+    float: left;
+    position: relative;
+}
+
+#user_icon {
+    float: left;
+    position: relative;
+    margin-top: 0.25vw;
+}
+
+#user_icon img {
+    height: 3.7vw;
+    float: left;
+    position: relative;
+    margin: 1vw;
+}
+
+#messages{
+    position: absolute;
+    width: 0;
+    height: 0;
+    text-align: center;
+}
+
+#message_marker {
+    position: absolute;
+    top:3.3vw;
+    left: -2.3vw;
+    background-color: orange;
+    width: 2vmax;
+    height: 2vmax;
+    padding: 0.125vmax 0.25vmax;
+    font-size: 1.5vmax;
+    text-align: center;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: border-radius 0.5s ease-in-out;
+}
+
+#messages ul {
+    visibility: hidden;
+    position: absolute;
+    top: calc(3.3vw + 2vmax);
+    right: -5vw;
+    width: 37vmin;
+    max-height: 49vmin;
+    border-radius: 2%;
+    overflow-y: scroll;
+    box-shadow: 0 0.075vmax 0.25vmax 0.0075vmax black;
+}
+
+#messages ul::-webkit-scrollbar {
+    display: none;
+}
+
+#messages ul li {
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    background-color: #ffffff;
+    height: 15vmin;
+    padding: 0;
+    overflow: hidden;
+}
+
+#messages td {
+    vertical-align: top;
+    padding-top: 2vh;
+    position: relative;
+    height: 15vmin;
+    align-items: center;
+}
+
+.message_id {
+    width: 20%;
+}
+
+.message_content {
+    width: 80%;
+}
+
+.message_id span {
+    position: absolute;
+    left: 1.25vh;
+    background-color: #c69c6d;
+    color: #3e1f0b;
+    border-radius: 100%;
+    font-size: 2.25vmin;
+    text-align: center;
+    width: 2.75vmin;
+    height: 2.75vmin;
+    transition: all 0.25s ease-in-out;
+}
+
+.fa-window-close {
+    width: 2.75vmin;
+    height: 2.75vmin;
+    text-align: center;
+    right: 1.25vh;
+    top: 2vh;
+    position: absolute;
+    color: #3e1f0b;
+    font-size: 5vmin;
+    transition: all 0.25s ease-in-out;
+}
+
+
+
+.message_content * {
+    transition: all 0.25s ease-in-out;
+    text-align: left;
+    font-size: 1.75vmin;
+}
+
+#messages:hover #message_marker{
+    border-radius: 100% 100% 0 0;
+}
+
+#messages:hover ul {
+    visibility: visible;
+}
+
+#messages:hover ul li{
+    width: 100%;
+    opacity: 1;
+}
+
+#messages ul li:hover * {
+    color: #c69c6d;
+}
+
+#messages ul li:hover span {
+    background-color: #230a00;
+}
+
+#messages ul li .fa-window-close {
+    color: #3e1f0b;
+}
+
+#messages ul li .fa-window-close:hover {
+    color: red;
+}
+
+#user_name {
+    text-align: left;
+    margin-top: 0.75vw;
+    font-size: 1.3vw;
+}
+
+#goods {
+    margin: 0.15vw;
+}
+
+#goods img {
+    float: left;
+    position: relative;
+    height: 2.7vw;
+    margin-left: 0.25vw;
+}
+
+#banner {
+    width: 100%;
+}
+
+
+@media (max-width: 100vh) {
+    
+    .message_content * {
+        font-size: 2vmin;
+    }
+
+    .message_content .fa-window-close {
+        font-size: 2.5vmin;
+    }
+}
+
+/*-----------------------------------------------------------------------------------------*/
+@media (max-width: 75vh) {
+
+header {
+    height: 11vh;
+}
+
+#navpan {
+    display: none;
+}
+
+#burger-menu {
+    display: block;
+    height: 11vh;
+    width: 100%;
+}
+
+#title {
+    background-color: white;
+    height: 11vh;
+    width: 100%;
+    border-bottom: 0.5vh solid #875f42;
+}
+
+#title li {
+    float: left;
+}
+
+#title #burger_menu_checkbox {
+    position: relative;
+    width: 20vw;
+    height: 11vh;
+    display: block;
+    float:left;
+}
+
+#title #burger_menu_label {
+    position: absolute;
+    cursor: pointer;
+    height: 4.55vh;
+    width: 11vw;
+    top: 4vh;
+    left: 3vw;
+}
+
+#title #burger_menu_icon::before {
+    content: "";
+    position: absolute;
+    background-color: #3e1f0b;
+    top: -1.3vh;
+    width: 11vw;
+    height: 0.65vh;
+    transition: transform 0.5s ease, top 0.5s ease;
+}
+
+#title #burger_menu_icon {
+    position: absolute;
+    background-color: #3e1f0b;
+    top: 1.95vh;
+    width: 11vw;
+    height: 0.65vh;
+    transition: background-color 0.5s ease;
+}
+
+#title #burger_menu_icon::after {
+    content: "";
+    position: absolute;
+    background-color: #3e1f0b;
+    top: 1.3vh;
+    width: 11vw;
+    height: 0.65vh;
+    transition: transform 0.5s ease, top 0.5s ease;
+}
+
+#burger_menu_toggle:checked + ul #burger_menu_icon::before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+#burger_menu_toggle:checked + ul #burger_menu_icon {
+    background-color: white;
+}
+
+#burger_menu_toggle:checked + ul #burger_menu_icon::after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+#burger_menu_toggle:checked + ul ~ ul{
+    top:11vh;
+}
+
+#title #burger_menu_logo {
+    position: relative;
+    width: 60%;
+    height: 11vh;
+}
+
+#title #logo img {
+    display: block;
+    margin: 1.5vh auto;
+    height: 8vh;
+}
+
+#title ~ ul {
+    position: absolute;
+    width: 100%;
+    top:-66vh;
+    z-index: -1;
+    background-color: white;
+    transition: top 0.5s ease-in-out;
+    box-shadow: 0 0 1vw 0.05vw black;
+}
+
+#title ~ ul li{
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    height: 11vh;
+    padding: 3.5vh 0;
+}
+
+#title ~ ul li p{
+    transition: color 0.25s ease-in-out;
+    font-size: 3.3vh;
+}
+
+#title ~ ul li p:hover{
+    color:#c69c6d;
+}
+
+#user_field {
+    position: absolute;
+    top: 2vh;
+    right: 0;
+    width: 30%;
+    height: 11vh;
+}
+
+#user_icon {
+    float: left;
+}
+
+#user_icon img {
+    height: 6vh;
+    margin: 0.5vh;
+}
+
+#cart_icon img {
+    height: 4vh;
+}
+
+#liked_icon img {
+    height: 4vh;
+}
+
+#user_field a {
+    text-decoration: underline;
+    display: block;
+}
+
+#user_field p{
+    font-size: 4vw;
+}
+}
